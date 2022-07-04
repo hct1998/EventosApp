@@ -10,6 +10,17 @@ namespace EventosModel.DAL
     {
 
         private EventosDBEntities EventosDB = new EventosDBEntities();
+
+        public void Actualizar(Asistente a)
+        {
+            Asistente aOriginal = this.eventosDB.Asistentes.Find(a.Id);
+            aOriginal.Estado = a.Estado;
+            aOriginal.Nombre = a.Nombre;
+            aOriginal.Apellido = a.Apellido;
+            aOriginal.Edad = a.Edad;
+            this.EventosDB.SaveChanges();
+        }
+
         public void AgregarAsistente(Asistente asistente)
         {
             this.EventosDB.Asistentes.Add(asistente);
@@ -27,17 +38,20 @@ namespace EventosModel.DAL
 
         public Asistente Obtener(int id)
         {
-            throw new NotImplementedException();
+            return this.EventosDB.Asistentes.Find(id);
         }
 
         public List<Asistente> ObtenerAsistentes()
         {
-            throw new NotImplementedException();
+            return this.EventosDB.Asistentes.ToList();
         }
 
         public List<Asistente> ObtenerAsistentes(string estado)
         {
-            throw new NotImplementedException();
+            var query = from a in this.EventosDB.Asistentes
+                        where a.Estado == estado
+                        select a;
+            return query.ToList();
         }
     }
 }

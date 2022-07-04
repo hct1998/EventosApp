@@ -17,6 +17,8 @@ namespace EventosModel.DAL
 
         void EliminarAsistente(int id);
 
+        void Actualizar(IAsistentesDAL a);
+
 
 
 
