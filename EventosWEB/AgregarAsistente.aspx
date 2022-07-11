@@ -29,7 +29,7 @@
 
                     <div class="form-group">
                         <label for="edadTxt"> Edad: </label>
-                        <asp:TextBox ID="Edad" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="Edad" TextMode="number" CssClass="form-control" runat="server"></asp:TextBox>
                     </div>
 
                     <div class="form-group">
@@ -38,28 +38,21 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="estadoTxt"> Estado: </label>
-                        <asp:TextBox ID="Estado" CssClass="form-control" runat="server"></asp:TextBox>
+                        <label for="estadoRbl"> Estado: </label>
+                        <asp:RadioButtomList ID="estadoRbl" runat="server">
+                            <asp:ListItem Text="Pagada" Selected="True" Value="Pagada"></asp:ListItem>
+                            <asp:ListItem Text="Con Deuda" Selected="True" Value="conDeuda"></asp:ListItem>
+
+                        </asp:RadioButtomList>
                     </div>
-
-                  
-                   
-
-
-
-
-
-
+                    
 
                     <div class="form-group">
-                        <asp:Button runat="server" ID="agregarAsistente" text="Agregar" CssClass="btn btn-primary" OnClick="AgregarAsis_Click" />
-
+                        <label for="regionDDL">Region</label>
+                        <asp:DropDownList ID="regionDDL" runat="server"></asp:DropDownList>
                     </div>
 
-
-                    <div class="form-group">
-                        <asp:Button runat="server" ID="agregarBtn" Text="Agregar" CssClass="btn btn-primary" OnClick="Agregarbtn_Click"/>
-                    </div>
+                    <asp:Button runat="server" CssClass="btn btn-primary" ID="ingresarBtn" Text="Ingresar" />
 
                 </div>
             </div>

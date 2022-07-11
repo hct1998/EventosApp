@@ -20,18 +20,7 @@ namespace EventosWEB
         }
 
 
-       protected void AgregarAsis_Click(object sender, EventArgs e)
-        {
-            string rut = this.rutTxt.Text.Trim();
-            string nombre = this.nombreTxt.Text.Trim();
-            string apellido = this.apellidoTxt.Text.Trim();
-            string edad = this.edadTxt.Text.Trim();
-            string empresa = this.empresaTxt.Text.Trim();
-            string estado = this.estadoTxt.Text.Trim();
-
-
-        }
-
+     
 
 
 

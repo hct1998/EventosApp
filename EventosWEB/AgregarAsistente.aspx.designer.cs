@@ -67,30 +67,30 @@ namespace EventosWEB {
         protected global::System.Web.UI.WebControls.TextBox Empresa;
         
         /// <summary>
-        /// Control Estado.
+        /// Control estadoRbl.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Estado;
+        protected global::System.Web.UI.WebControls.RadioButtomList estadoRbl;
         
         /// <summary>
-        /// Control agregarAsistente.
+        /// Control regionDDL.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button agregarAsistente;
+        protected global::System.Web.UI.WebControls.DropDownList regionDDL;
         
         /// <summary>
-        /// Control agregarBtn.
+        /// Control ingresarBtn.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button agregarBtn;
+        protected global::System.Web.UI.WebControls.Button ingresarBtn;
     }
 }
